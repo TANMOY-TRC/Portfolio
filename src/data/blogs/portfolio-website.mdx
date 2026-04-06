@@ -1,0 +1,55 @@
+---
+title: "A Dual-Purpose Portfolio Built with Next.js and MDX"
+date: "2026-04-05"
+summary: "A deep dive into the architecture and design of a new data-driven portfolio, built to bridge the gap between academia and the professional world."
+image: "/blog/portfolio-website.jpg"
+keywords: ["Next.js", "WebDev", "Portfolio"]
+published: "true"
+---
+
+## Introduction
+
+Standard templates often fall short when showcasing a background that spans both academic research and professional software engineering. This custom portfolio, built with **Next.js** and **TailwindCSS**, bridges the gap between academia and the tech industry. It prioritizes a minimalist design, robust SEO generation, and a fully functional data-driven architecture.
+
+Here is a comprehensive look at the core architecture and the specific design features implemented in this project.
+
+
+## The Data-Driven Architecture
+
+Maintaining a portfolio often becomes tedious when updating simple text requires navigating through nested React components.
+
+To resolve this, the application separates the UI logic completely from the content. The entire website operates on a data-driven architecture. All information—including profile bios, social links, experience, education, and projects—resides inside simple TypeScript/JSON objects within a dedicated `/data` directory. These files adhere strictly to TypeScript types defined in the `/types` folder, ensuring zero build errors and total data consistency.
+
+Users update their portfolio simply by modifying these data objects, completely eliminating the need to touch core UI components.
+
+
+## The Technology Stack
+
+The project utilizes a modern tech stack to ensure fast performance, SEO optimization, and a visually engaging experience.
+
+- **Next.js (App Router):** Provides seamless routing, server-side rendering, and dynamic metadata generation.
+- **TailwindCSS:** Delivers rapid, responsive, and minimalist styling.
+- **UI Components:** Integrates a curated mix of **shadcn/ui** for base components and **MagicUI** for subtle, modern animations.
+- **Lucide & React Icons:** Supply clean, scalable iconography across the multi-page layout.
+
+
+## An MDX-Powered Blog Engine
+
+Instead of relying on an external CMS, the application features a robust blog engine integrated directly into the system using `next-mdx-remote`.
+
+Writing a new post involves simply creating an `.mdx` file. The engine supports GitHub-flavored Markdown, enabling the inclusion of code snippets, structured tables, and custom React components directly into the text. Furthermore, the Next.js setup automatically handles all routing, parses the frontmatter, and generates dynamic Open Graph and Twitter tags for social sharing.
+
+
+## Open Source Availability
+
+This template offers high flexibility. Developers, academic researchers, or industry professionals can utilize this repository to showcase their work seamlessly.
+
+The full source code and comprehensive setup instructions are available on [GitHub](https://github.com/TANMOY-TRC/Portfolio).
+
+> [!IMPORTANT]
+> Developers using any component or this template for their own personal sites **must simply retain a link back to the original repository** in their footer or credits section.
+
+
+## Final Thoughts
+
+This project is more than a template, it's a framework for personal branding. By combining minimal design, powerful architecture and developer-friendly tools, it gives you everything needed to build a compelling online identity.
